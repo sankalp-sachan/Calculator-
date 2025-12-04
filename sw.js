@@ -1,4 +1,4 @@
-const CACHE_NAME = "ideabox-v1";
+const CACHE_NAME = "Time-weight-v1";
 const ASSETS = [
   "./",
   "./index.html",
