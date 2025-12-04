@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PWA meta -->
+  <meta name="theme-color" content="#007bff" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="icons/icon-512.png" type="image/x-icon" />
+
+  <title>Time and Weight Calculators</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Time and Weight Calculators</h1>
+
+    <button id="switchBtn">Switch to Weight Calculator</button>
+
+    <!-- Install PWA button (shown only when available) -->
+    <button id="installBtn" class="install-btn" hidden>Install App</button>
+
+    <!-- Time Calculator -->
+    <div id="timeCalculator" class="calculator active">
+      <h2>Time Calculator</h2>
+      <div class="input-group">
+        <label for="hours">Hours:</label>
+        <input type="number" id="hours" min="0" />
+      </div>
+      <div class="input-group">
+        <label for="minutes">Minutes:</label>
+        <input type="number" id="minutes" min="0" max="59" />
+      </div>
+      <button id="addTime">Add Entry</button>
+      <button id="deleteTime" class="delete">Delete All Time Data</button>
+      <div class="dashboard">
+        <h3>Time Entries Dashboard</h3>
+        <div id="timeTotal" class="total"></div>
+        <ul id="timeEntries"></ul>
+      </div>
+    </div>
+
+    <!-- Weight Calculator -->
+    <div id="weightCalculator" class="calculator">
+      <h2>Weight Calculator</h2>
+      <div class="input-group">
+        <label for="kg">Kilograms:</label>
+        <input type="number" id="kg" min="0" />
+      </div>
+      <div class="input-group">
+        <label for="grams">Grams:</label>
+        <input type="number" id="grams" min="0" max="999" />
+      </div>
+      <button id="addWeight">Add Entry</button>
+      <button id="deleteWeight" class="delete">Delete All Weight Data</button>
+      <div class="dashboard">
+        <h3>Weight Entries Dashboard</h3>
+        <div id="weightTotal" class="total"></div>
+        <ul id="weightEntries"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
