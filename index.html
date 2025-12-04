@@ -4,16 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- PWA meta -->
-  <meta name="theme-color" content="#007bff" />
-  <link rel="manifest" href="manifest.json" />
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="icons/icon-512.png" type="image/x-icon" />
-
-  <title>Time and Weight Calculators</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f1115">
+  <title>CreatiNote — Simple, Fast, Organized</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -23,7 +19,7 @@
     <button id="switchBtn">Switch to Weight Calculator</button>
 
     <!-- Install PWA button (shown only when available) -->
-    <button id="installBtn" class="install-btn" hidden>Install App</button>
+    <!-- <button id="installBtn" class="install-btn" hidden>Install App</button> -->
 
     <!-- Time Calculator -->
     <div id="timeCalculator" class="calculator active">
@@ -65,8 +61,11 @@
       </div>
     </div>
   </div>
+  <footer class="app-footer">
+    <small>Built for speed & focus — stored locally in your browser.</small>
+  </footer>
 
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
